@@ -6,3 +6,6 @@ notebooks/.ipynb_checkpoints/
 .Rhistory
 .DS_Store
 
+kowiki-latest-pages-articles.xml
+kowiki-latest-pages-articles.xml.bz2
+data/korean_corpus/

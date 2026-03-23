@@ -4,7 +4,7 @@ from transformers import AutoTokenizer, AutoModel
 class BERTBase():
 
     def __init__(self):
-        model_name = "bert-base-uncased"
+        model_name = "bert-base-multilingual-cased"
         self.tokenizer = AutoTokenizer.from_pretrained(model_name)
         self.model = AutoModel.from_pretrained(model_name)
         self.model.eval()

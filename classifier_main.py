@@ -124,6 +124,8 @@ def load_feature_norms(args):
         feature_norms = BuchananFeatureNorms('./data/external/buchanan/cue_feature_words.csv')
     elif args['train_data'] == 'binder':
         feature_norms = BinderFeatureNorms('./data/external/binder_word_ratings/WordSet1_Ratings.csv')
+    elif args['train_data'] == 'binder_korean':
+        feature_norms = BinderFeatureNorms('./data/external/binder_word_ratings/korean_binder_norms.csv')
     else:
         raise Exception("dataset not implemented")
     return feature_norms
