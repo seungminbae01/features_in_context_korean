@@ -189,7 +189,7 @@ def main():
         # Pearson correlation
         r, p = pearsonr(predicted, actual)
         results.append((feat, r, p, n_pairs))
-        print(f"{feat:<20s}  {r:>10.4f}  {p:>10.4f}  {n_pairs:>12d}")
+        print(f"{feat:<20s}  {r:>10.4f}  {p:>10.6f}  {n_pairs:>12d}")
 
     # Summary
     print(f"\n{'=' * 60}")
@@ -204,12 +204,12 @@ def main():
     results_sorted = sorted(results, key=lambda x: x[1], reverse=True)
     print(f"\nTop 10 best predicted features:")
     for feat, r, p, n in results_sorted[:10]:
-        print(f"  {feat:<20s}  r = {r:.4f}  (p = {p:.4f})")
+        print(f"  {feat:<20s}  r = {r:.4f}  (p = {p:.6f})")
 
     # Bottom 5 worst predicted features
     print(f"\nBottom 5 worst predicted features:")
     for feat, r, p, n in results_sorted[-5:]:
-        print(f"  {feat:<20s}  r = {r:.4f}  (p = {p:.4f})")
+        print(f"  {feat:<20s}  r = {r:.4f}  (p = {p:.6f})")
 
 
 if __name__ == '__main__':
