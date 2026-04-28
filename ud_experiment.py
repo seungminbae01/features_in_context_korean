@@ -27,6 +27,10 @@ UD_FILES = [
     './data/ud/ko_gsd-ud-train.conllu',
     './data/ud/ko_gsd-ud-dev.conllu',
     './data/ud/ko_gsd-ud-test.conllu',
+    './data/ud/ko_kaist-ud-train.conllu',
+    './data/ud/ko_kaist-ud-dev.conllu',
+    './data/ud/ko_kaist-ud-test.conllu',
+    './data/ud/ko_pud-ud-test.conllu',
 ]
 
 # Korean -> English feature translations
